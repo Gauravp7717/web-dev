@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* custom properties */
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color :#0ef;
+
+  
+    
+}
+
+html{
+    font-size: 61.5%;
+    overflow: auto;
+
+}
+
+
+
+/* global style */
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+
+}
+/* using of custom properties */
+
+
+
+
+
+@layer utilities{
+    .bg-var {
+        background-color: var(--bg-color);
+    }
+    
+    .bg-varto{
+        background-color: var(--second-bg-color);
+    }
+    
+    .text-var {
+        color: var(--text-color);
+    }
+    .text-varto {
+        color: var(--main-color);
+    }
+}
+
+
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

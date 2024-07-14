@@ -8,21 +8,23 @@
     <title>Personal info</title>
     <link href='https://unpkg.com/boxicon@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <link href="dist/output.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
 
 </head>
-<body>
+<body class="bg-var text-var">
     
     
-    <header class="header">
-        <a href="#" class="logo">Gaurav's Portfolio</a>
+    <header class="sticky top-0 left-0 w-full px-9 py-8 bg-var flex justify-between items-center z-50">
+        <a href="#" class="text-3xl font-semibold text-var">Gaurav's Portfolio</a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
             
-        <nav class="navbar">
-            <a href="index.html">home</a>
-            <a href="#about">About</a>
-            <a href="#services">Skill</a>
+        <nav class="navbar" id="nav">
+            <a href="index.html" class="text-base md:text-3xl text-var ml-16 transition duration-300 ease-in-out hover:text-var">home</a>
+            <a href="#about" class="text-base md:text-3xl text-var ml-16 transition duration-300 ease-in-out hover:text-var">About</a>
+            <a href="#services" class="text-base md:text-3xl text-var ml-16 transition duration-300 ease-in-out hover:text-var">Skill</a>
           
         </nav>
 
@@ -31,47 +33,43 @@
     
     
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hey , It's Me</h3>
-            <h1>Gaurav Patil</h1>
-            <h3>And I'm a <span>FRONTEND DEVELOPER</span></h3>
-            <p>I'm student of software engineering now and studying in PGMCOE , pune<br></p>
-
+    <section class="flex justify-center items-center min-h-screen" id="home">
+        <div class="font-serif text-4xl font-bold mb-8 leading-relaxed" id="home-content">
+            <h3 class="font-serif text-5xl font-bold mb-8 ">Hey , It's Me</h3>
+            <h1 class="font-serif text-5xl font-bold leading-tight">Gaurav Patil</h1>
+            <h3 class="text-var">And I'm a <span >FRONTEND DEVELOPER</span></h3>
+            <p class="font-serif text-lg leading-relaxed">I'm student of software engineering now and studying in PGMCOE , pune<br></p>
+<!-- 
             <div class="social-media">
                 <a href="#"><i class='bx bxl-facebook' ></i></a>
                 <a href="#"><i class='bx bxl-twitter' ></i></a>
                 <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
                 <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            </div>
+            </div> -->
 
-            <a href="#" class="btn">DOWNLOAD CV</a>
+            <a href="#" id="btn">DOWNLOAD CV</a>
          </div>
 
-         <div class="home-img">
-          <!-- <img src="imgs/dg.png" alt=""> -->
-         </div>
+        
     </section>
 
-    <section class="about" id="about">
-        <div class="about-img">
-           <!-- <img src="imgs/dg.png" alt=""> -->
-        </div>
+    <section class="flex justify-center items-center gap-8 bg-varto" id="about">
+        
 
         <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Frontend developer<span> Youtuber</span></h3>
-            <p>
+            <h2 class="heading font-serif text-center text-5xl">About <span>Me</span></h2>
+            <h3 class="text-3d">Frontend developer<span> Youtuber</span></h3>
+            <p class="font-serif text-2xl font-bold my-8 leading-relaxed">
                 With the passion to desing and develope, I want to<BR> Work as a Front-end Web developer where I could creat<br> digital magic and 
                 elevate user experience in HTML,CSS<BR>, C , C++, JAVA, PYTHON AND ETC.
             </p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" id="btn">Read More</a>
         </div>
     </section>
 
 
     <section class="services" id="services">
-        <h2 class="heading">Our <span>Skills</span></h2> 
+        <h2 class="heading ">Our <span>Skills</span></h2> 
         
         <div class="services-container">
             <div class="services-box">
@@ -83,7 +81,7 @@
                     we have the technical know-how to build websites that are robust, scalable, and easily maintainable.
 
 
-                <a href="#" class="btn">Read More</a> 
+                <a href="#" id="btn">Read More</a> 
             </div>
 
         
@@ -96,7 +94,7 @@
                      helping companies effectively communicate their messages and connect with their target market.
 
                 </p>
-                <a href="#" class="btn">Read More</a> 
+                <a href="#" id="btn">Read More</a> 
             </div>
 
         
@@ -110,7 +108,7 @@
                      and implement complex algorithms and data structures that power various applications across industries.
 
                 </p>
-                <a href="#" class="btn">Read More</a> 
+                <a href="#" id="btn">Read More</a> 
             
             </div>
 
